@@ -1,0 +1,132 @@
+/* CSS for styling the form */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/image/wallpaperflare.com_wallpaper\ \(8\).jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+    height: 120vh;
+}
+
+/* Navigation Bar */
+nav {
+    background: rgba(1, 1, 1, 0.355);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1.logo {
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 0;
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+ul.navbar li {
+    margin: 0 10px;
+}
+
+ul.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+ul.navbar li a:hover {
+    color: #ff0000;
+    background-color: #ffff00;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+/* Dropdown Menu for Services */
+ul.navbar li ul {
+    display: none;
+    position: absolute;
+    background: rgba(255, 0, 0, 0.811);
+    margin-top: 0.5rem;
+    padding: 0.5rem 0;
+    border-radius: 14px;
+    list-style: none;
+}
+
+ul.navbar li:hover ul {
+    display: block;
+}
+
+ul.navbar li ul li {
+    width: 200px;
+    margin: 0.5rem 0;
+}
+
+ul.navbar li ul li a {
+    color: #ffe100;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+ul.navbar li ul li a:hover {
+    background: rgb(255, 170, 0);
+}
+
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-left: 2%;
+    text-align: center;
+    margin-top: 90px;
+    margin-left: 16%;
+}
+h2 {
+    margin-bottom: 20px;
+}
+.input-group {
+    margin-bottom: 15px;
+}
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.input-group input:focus, .input-group textarea:focus {
+    border-color: #4CAF50;
+    background-color: #e8f0fe;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+button:hover {
+    background-color: #45a049;
+}

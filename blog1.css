@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/image/post.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 120vh;
+}
+
+/* Navigation Bar */
+nav {
+    background: rgba(1, 1, 1, 0.355);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1.logo {
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 0;
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+ul.navbar li {
+    margin: 0 10px;
+}
+
+ul.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+ul.navbar li a:hover {
+    color: #ff0000;
+    background-color: #ffff00;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+/* Dropdown Menu for Services */
+ul.navbar li ul {
+    display: none;
+    position: absolute;
+    background: rgba(255, 0, 0, 0.811);
+    margin-top: 0.5rem;
+    padding: 0.5rem 0;
+    border-radius: 14px;
+    list-style: none;
+    z-index: 1000;
+}
+
+ul.navbar li:hover ul {
+    display: block;
+}
+
+ul.navbar li ul li {
+    width: 200px;
+    margin: 0.5rem 0;
+}
+
+ul.navbar li ul li a {
+    color: #ffe100;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+ul.navbar li ul li a:hover {
+    background: rgb(255, 170, 0);
+}
+
+/* Main Content */
+main .container {
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.803);
+    border-radius: 10px;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #af1414;
+}
+
+.input-group {
+    margin: 1rem 0;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #303030;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #e10606;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#rating {
+    font-size: 1rem;   /* Adjust size as needed */
+    padding: 0.5rem;     /* Optional: adds spacing */
+}
+
+button[type="post"] {
+    display: block;
+    width: 25%;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: none;
+    background: #3890dc;
+    color: #ffffff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button[type="post"]:hover {
+    background: #71df53;
+}
+button[type="submit"] {
+    display: block;
+    width: 25%;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: none;
+    background: #3890dc;
+    color: #ffffff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button[type="submit"]:hover {
+    background: #71df53;
+}
